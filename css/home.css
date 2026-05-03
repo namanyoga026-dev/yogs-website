@@ -523,3 +523,50 @@
   font-size: var(--font-size-sm);
   font-weight: var(--font-weight-medium);
 }
+/* ---- Hindi Sections ---- */
+.hindi-intro {
+  padding: var(--space-8) var(--container-padding);
+  background: var(--color-white);
+  border-top: 1px solid var(--color-gray-100);
+}
+
+.hindi-intro__content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hindi-intro__content p {
+  font-size: var(--font-size-md);
+  color: var(--text-primary);
+  line-height: var(--line-height-relaxed);
+  margin-bottom: var(--space-4);
+  text-align: center;
+}
+
+.hindi-intro__content p:last-child {
+  margin-bottom: 0;
+  font-weight: var(--font-weight-medium);
+  color: var(--color-primary);
+}
+
+.hindi-therapy {
+  padding: var(--space-10) var(--container-padding);
+  background: var(--color-primary-bg);
+}
+
+.hindi-therapy__card {
+  background: var(--color-white);
+  padding: var(--space-6);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  max-width: 800px;
+  margin: 0 auto;
+  border-left: 4px solid var(--color-primary);
+}
+
+.hindi-therapy__card p {
+  font-size: var(--font-size-md);
+  color: var(--text-primary);
+  line-height: var(--line-height-relaxed);
+  text-align: center;
+}
