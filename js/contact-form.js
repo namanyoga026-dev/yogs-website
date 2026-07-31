@@ -22,44 +22,44 @@ function initContactForm() {
 
     // Validate Name
     if (!name.value.trim()) {
-      showError(name, 'error-name', 'Please enter your name');
+      showError(name, 'error-name', 'कृपया अपना नाम लिखें');
       isValid = false;
     }
 
     // Validate Email
     if (!email.value.trim()) {
-      showError(email, 'error-email', 'Please enter your email');
+      showError(email, 'error-email', 'कृपया अपना ईमेल लिखें');
       isValid = false;
     } else if (!isValidEmail(email.value)) {
-      showError(email, 'error-email', 'Please enter a valid email address');
+      showError(email, 'error-email', 'कृपया सही ईमेल पता लिखें');
       isValid = false;
     }
 
     // Validate Subject
     if (!subject.value.trim()) {
-      showError(subject, 'error-subject', 'Please enter a subject');
+      showError(subject, 'error-subject', 'कृपया विषय लिखें');
       isValid = false;
     }
 
     // Validate Message
     if (!message.value.trim()) {
-      showError(message, 'error-message', 'Please enter your message');
+      showError(message, 'error-message', 'कृपया अपना संदेश लिखें');
       isValid = false;
     } else if (message.value.trim().length < 10) {
-      showError(message, 'error-message', 'Message must be at least 10 characters');
+      showError(message, 'error-message', 'संदेश कम से कम 10 अक्षरों का होना चाहिए');
       isValid = false;
     }
 
     if (isValid) {
       // Simulate form submission
       const btn = document.getElementById('submit-btn');
-      btn.textContent = 'Sending...';
+      btn.textContent = 'भेजा जा रहा है...';
       btn.disabled = true;
 
       setTimeout(() => {
         form.style.display = 'none';
         document.getElementById('formSuccess').classList.add('show');
-        btn.textContent = 'Send Message →';
+        btn.textContent = 'संदेश भेजें →';
         btn.disabled = false;
       }, 1200);
     }
